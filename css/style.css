@@ -1,0 +1,288 @@
+body {
+    background: #B71C1C;
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #212121;
+}
+a:hover {
+    color: #B71C1C;
+    text-decoration: none;
+}
+p {
+    color: #212121;
+}
+h1 {
+    color: #212121;
+    font-size: 75px;
+    font-weight: 200;
+}
+h2 {
+    color: #B71C1C;
+    font-size: 25px;
+    font-weight: 300;
+}
+h3 {
+    color: #B71C1C;
+    font-size: 15px;
+    font-weight: 300;
+}
+.menu {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+}
+.menu img {
+    position: absolute;
+    margin: 10px;
+}
+.menu img:hover {
+    animation-name: ruota;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+.menu ul {
+    list-style-type: none;
+    text-align: right;
+    padding-top: 30px;
+}
+.menu li {
+    display: inline;
+    font-size: 25px;
+    font-weight: 200;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.menu ul li a:hover {
+    color: #B71C1C;
+    text-decoration: none;
+    font-weight: 300;
+}
+.container {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 120px;
+    padding-bottom: 50px;
+    background-color: white;
+    width: 90%;
+    height: auto;
+}
+.container h1 {
+    text-align: center;
+    font-weight: 300;
+    color: #B71C1C;
+}
+.container ul {
+    list-style-type: none;
+}
+.testo {
+    margin: 10px;
+}
+.testo p {
+    font-size: 15px;
+    font-weight: 400;
+}
+.footer {
+    width: 90%;
+    margin-top: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: white;
+    height: 50px;
+    margin-bottom: 50px;
+}
+.footer p {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 15px;
+}
+.menu_mob {
+  background-color: white;
+  width: 100%;
+  height: 312px;
+  display: none;
+}
+.menu_mob ul {
+  list-style-type: none;
+  text-align: right;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.menu_mob li {
+  font-size: 30px;
+  font-weight: 200;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #B71C1C;
+}
+.mob_text {
+  display: none;
+}
+#mob_logo {
+  display: none;
+}
+#prod {
+    display: none;
+}
+.row {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: white;
+  margin-top: 120px;
+  padding-bottom: 50px;
+}
+.row h1 {
+    text-align: center;
+    font-weight: 300;
+    color: #B71C1C;
+}
+.row ul {
+    list-style-type: none;
+}
+.slider {
+    overflow: hidden;
+    margin: 10px auto;
+}
+.slider, .slide img {
+    width: 850px;
+    height: 500px;
+}
+.slide img {
+    float: left;
+    transition: .3s;
+}
+img:hover {
+    opacity: .9;
+    transform: scale(1.1);
+}
+.wrap {
+    position: relative;
+    width: 600%;
+    left: 0;
+    animation: 20s slide infinite ease-in-out;
+}
+.wrap12 {
+    position: relative;
+    width: 1200%;
+    left: 0;
+    animation: 40s slide12 infinite ease-in-out;
+}
+.wrap:hover {
+    animation-play-state: paused;
+}
+@keyframes slide {
+    0%, 10% {
+        left: 0%;
+    }
+    12%, 22% {
+        left: -100%;
+    }
+    24%, 34% {
+        left: -200%;
+    }
+    36%, 48% {
+        left: -300%;
+    }
+    50%, 60% {
+        left: -400%;
+    }
+    62%, 72% {
+        left: -500%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+@keyframes slide12 {
+    0%, 5% {
+        left: 0%;
+    }
+    7%, 12% {
+        left: -100%;
+    }
+    14%, 19% {
+        left: -200%;
+    }
+    21%, 26% {
+        left: -300%;
+    }
+    28%, 33% {
+        left: -400%;
+    }
+    35%, 40% {
+        left: -500%;
+    }
+    42%, 47% {
+        left: -600%;
+    }
+    49%, 54% {
+        left: -700%;
+    }
+    56%, 61% {
+        left: -800%;
+    }
+    63%, 68% {
+        left: -900%;
+    }
+    70%, 75% {
+        left: -1000%;
+    }
+    77%, 82% {
+        left: -1100%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+@keyframes ruota {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@media (max-width: 992px) {
+    .menu {
+      display: none;
+    }
+    #mob_menu {
+      display: block;
+    }
+    .slider {
+      display: none;
+    }
+    .footer {
+      height: auto;
+      padding-bottom: 10px;
+    }
+    .container {
+      margin-top: 20px;
+    }
+    .mob_text {
+      display: block;
+    }
+    .desk_text {
+      display: none;
+    }
+    #mob_logo {
+      display: block;
+    }
+    .menu_mob {
+      display: block;
+    }
+    .testo p {
+      font-size: 20px;
+    }
+    #prod {
+        display: block;
+    }
+    .row {
+        display: none;
+    }
+}
