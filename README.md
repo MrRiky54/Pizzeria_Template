@@ -4,7 +4,7 @@ This is a website template for a pizzeria.
 
 ##Live Preview
 
-The Live Preview is [here](http://mrriky54.github.io/pizzeria).
+The Live Preview is [here](http://mrriky54hd.altervista.org/pizzeria).
 
 ##License
 
